@@ -1,0 +1,242 @@
+#header {
+  position: fixed;
+  background: none;
+  z-index:5;
+}
+
+.headerContent {
+  
+}
+
+#mainContent {
+  overflow-x: scroll;
+  height: calc(100vh - 30px);
+}
+
+#mainContent::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+#about, #education, #skills, #experience, .avatar, .socialLinks {
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+}
+
+
+.name {
+  font-family: 'Permanent Marker', cursive;
+  margin-bottom:0;
+  line-height:40px;
+}
+
+.jobTitle {
+  margin-bottom:5px;
+}
+.name, .jobTitle, .avatar, .socialLinks {
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+}
+.container {
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/inflicted.png");
+  padding:10px;
+}
+.socialLinks {
+  padding:5px 5px 0;
+}
+.socialLinks a > img {
+  width:25px;
+  
+}
+.socialLinks a {
+  margin:0 6px;
+  text-decoration: none;
+  text-align: center;
+  width: 19%;
+  display: inline-block;
+}
+
+.skills dt {
+  margin: 0;
+  padding: 1rem 0;
+  font-size: 24px;
+  color: #3D3D3D;
+}
+
+.skills dt:first-child {
+  padding-top: 0;
+}
+
+.skills dt:after {
+  width: 100%;
+  background-color: #3D3D3D;
+  height: 0.5rem;
+  content: "";
+  display: block;
+}
+
+.skills dd {
+  width: 100%;
+  height: 0.5rem;
+  position: relative;
+  right: 0;
+  margin: -1.5rem 0 0;
+  /* background-color: nth($colors, 1); */
+  
+  overflow: hidden;
+  text-indent: -1000px;
+}
+
+.skills dd:nth-child(2) {
+  background-color: #2196F3;
+}
+
+.skills dd:nth-child(4) {
+  background-color: #2196F3;
+}
+
+.skills dd:nth-child(6) {
+  background-color: #2196F3;
+}
+
+.skills dd:nth-child(8) {
+  background-color: #2196F3;
+}
+
+
+
+
+
+@media (min-width: 400px) {
+  .container {
+    width: 95%;
+  }
+}
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+    .container {
+    width: 95%;
+  }
+}
+
+html {
+  overflow: hidden;
+}
+body {
+  background:url('http://thepatternlibrary.com/img/ae.jpg');
+  font-family: 'Open Sans', sans-serif;
+  overflow:hidden;
+}
+.container {
+  padding-bottom:0;
+  height: calc(100vh - 16px);
+  overflow: hidden;
+}
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
+.sectionTitle {
+  font-size:24px;
+  font-weight:bold;
+  line-height:24px;
+  color:#3D3D3D;
+  padding-bottom:5px;
+  border-bottom:1.5px dashed #3D3D3D;
+  margin-bottom:5px;
+}
+.svgIcon {
+  padding-right:5px;
+}
+.no-m-l {
+  margin-left:0;
+}
+#education, #experience {
+  margin-bottom:15px;
+}
+#education .columns, #experience .columns {
+  margin-top:15px;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+a.pulse::hover img {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.horizontal .progress-bar {
+  float: left;
+  height: 45px;
+  width: 100%;
+  padding: 12px 0;
+}
+
+.horizontal .progress-track {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: #666;
+}
+
+.horizontal .progress-fill {
+  position: relative;
+  background: #4286f4;
+  height: 20px;
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  font-family: "Lato","Verdana",sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.rounded .progress-track,
+.rounded .progress-fill {
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+}
